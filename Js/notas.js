@@ -31,7 +31,19 @@ container.appendChild(novo)
 else{
     var containernu=document.getElementById("naoUrgente")
     containernu.appendChild(novo)
-    novo.classList.add("amarelo")
+    if (cont == 0) {
+    novo.classList.add("azul");
+    } 
+    else if (cont == 1) {
+    novo.classList.add("verde");
+    } 
+    else if (cont == 2) {
+    novo.classList.add("roxo");
+    }
+    cont = cont + 1;
+        if (cont == 3) {
+            cont = 0;
+        }  
 }
 }
 
