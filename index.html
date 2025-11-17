@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Projeto</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+        <h1>NOTAS</h1>
+    <input type="text" id="nota">
+    <input type="button" value="Adicionar" onclick="Adicionar()" id="add">
+    <input type="button" value="Remover" onclick="Remover()" id="Remover">
+    <input type="button" value="Remover Tudo" onclick="RemoverTudo()" id="RemoverTudo">
+
+    <label for="urgente">Urgente</label>
+    <input type="checkbox" id="urgente">
+
+    <div id="container">
+        <h3>Urgente</h3>
+    </div>
+
+    <div id="naoUrgente">
+        <h3>Não Urgente</h3>
+    </div>
+
+    <script type="text/javascript" src="Js/notas.js"></script>
+</body>
+</html>
