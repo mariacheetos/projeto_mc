@@ -63,3 +63,8 @@ function RemoverTudo(){
     container.innerHTML = "<h3>Urgente</h3>"
     containernu.innerHTML = "<h3>Não Urgente</h3>"
 }
+
+function Limpar(){
+    var limpar = document.getElementById("nota")
+    limpar.value = ''
+}
