@@ -1,4 +1,4 @@
-var cor=["azul","verde","roxo"]
+var cor=["azul","verde","roxo", "amarelo"]
 var cont=0
 
 function Adicionar(){
@@ -22,7 +22,8 @@ if(urgente){
     cont = cont + 1;
         if (cont == 3) {
             cont = 0;
-        }
+        }  
+        
 var container=document.getElementById("container")
 container.appendChild(novo)
 }
@@ -30,6 +31,7 @@ container.appendChild(novo)
 else{
     var containernu=document.getElementById("naoUrgente")
     containernu.appendChild(novo)
+    novo.classList.add("amarelo")
 }
 }
 
@@ -44,8 +46,8 @@ function Remover(){
 }
 
 function RemoverTudo(){
-    var paragrafo=document.getElementById("paragrafo")
-    if(paragrafo){
-        container.remove()
-    }
+    var container = document.getElementById("container")
+    var containernu= document.getElementById("naoUrgente")
+    container.innerHTML = "<h3>Urgente</h3>"
+    containernu.innerHTML = "<h3>Não Urgente</h3>"
 }

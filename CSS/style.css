@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #f8f9fa;
     margin: 20px;
 }
@@ -68,4 +68,7 @@ p {
 
 .roxo {
     background-color: #d3b6ff;
+}
+.amarelo{
+    background-color: yellowgreen;
 }
